@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package versioncompatibilty.v4;
+
+option java_multiple_files = true;
+option java_package = "com.grpc.example.proto.model.versioncompatibilty.v4";
+
+/*
+    Requirement:
+    - Add price info
+ */
+message Television {
+  string brand = 1;
+
+  reserved 2;
+  reserved "year", "model";
+
+  Type type = 3;
+  int32 price = 4;
+
+}
+
+enum Type {
+  HD = 0;
+  UHD = 1;
+  OLED = 2;
+}
