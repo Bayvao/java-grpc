@@ -12,6 +12,7 @@
         <module>proto-playground</module>
         <module>grpc-intro</module>
         <module>grpc-vs-rest</module>
+        <module>grpc-trading-platform</module>
     </modules>
 
     <properties>
